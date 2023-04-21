@@ -1,0 +1,18 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Capitol {{ chapterNr }} </mat-panel-title>
+      <mat-panel-description>
+        {{ chapterDescription }}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <p>This is the primary content of the panel.</p>
+    <!-- TO DO: Here it should be a custom text displayed instead of app-chapter-text-content-->
+    <app-chapter-text-content></app-chapter-text-content>
+
+    <div>
+      <button mat-raised-button color="primary">Incepe testul</button>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

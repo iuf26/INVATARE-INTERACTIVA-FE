@@ -12,6 +12,9 @@ import { ChaptersComponent } from './chapters/chapters.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
+import { ChapterComponent } from './chapter/chapter.component';
+import { ChapterTextContentComponent } from './chapter-text-content/chapter-text-content.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,8 @@ import { MatIconModule } from '@angular/material/icon';
     HeaderComponent,
     ChangeBgDirective,
     ChaptersComponent,
+    ChapterComponent,
+    ChapterTextContentComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +34,7 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserAnimationsModule,
     MatExpansionModule,
     MatIconModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
