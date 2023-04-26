@@ -15,6 +15,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { ChapterComponent } from './chapter/chapter.component';
 import { ChapterTextContentComponent } from './chapter-text-content/chapter-text-content.component';
 import { MatButtonModule } from '@angular/material/button';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { MatButtonModule } from '@angular/material/button';
     ChaptersComponent,
     ChapterComponent,
     ChapterTextContentComponent,
+    LandingPageComponent,
   ],
   imports: [
     BrowserModule,

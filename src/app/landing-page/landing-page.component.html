@@ -1,0 +1,9 @@
+<app-chapters
+  *ngIf="!isQuizzOpen"
+  [setIsQuizzOpen]="setIsQuizzOpen.bind(this)"
+></app-chapters>
+
+<app-question
+  *ngIf="isQuizzOpen"
+  [setIsQuizzOpen]="setIsQuizzOpen"
+></app-question>

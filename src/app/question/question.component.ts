@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { interval } from 'rxjs';
 import { QuestionService } from '../service/question.service';
 
@@ -8,6 +8,9 @@ import { QuestionService } from '../service/question.service';
   styleUrls: ['./question.component.scss']
 })
 export class QuestionComponent implements OnInit {
+  @Input() chapterTitle: number;
+  @Input() chapterNr: number;
+  @Input() setIsQuizzOpen: (value:boolean) => void
 
   public name: string = "";
   public questionList: any = [];
@@ -29,7 +32,7 @@ export class QuestionComponent implements OnInit {
   getAllQuestions() {
     this.questionService.getQuestionJson()
       .subscribe(res => {
-        this.questionList = res.questions;
+        this.questionList = res.questions[0];
       })
   }
   nextQuestion() {

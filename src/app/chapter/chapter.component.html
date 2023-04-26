@@ -12,7 +12,13 @@
     <app-chapter-text-content></app-chapter-text-content>
 
     <div>
-      <button mat-raised-button color="primary">Incepe testul</button>
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="onStartTestButtonClick(chapterNr)"
+      >
+        Incepe testul
+      </button>
     </div>
   </mat-expansion-panel>
 </mat-accordion>
