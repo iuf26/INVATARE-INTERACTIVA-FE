@@ -16,6 +16,11 @@ import { ChapterComponent } from './chapter/chapter.component';
 import { ChapterTextContentComponent } from './chapter-text-content/chapter-text-content.component';
 import { MatButtonModule } from '@angular/material/button';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { SuggestedLinkComponent } from './suggested-link/suggested-link.component';
+import { VgCoreModule } from '@videogular/ngx-videogular/core';
+import { VgControlsModule } from '@videogular/ngx-videogular/controls';
+import { VgOverlayPlayModule } from '@videogular/ngx-videogular/overlay-play';
+import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
 
 @NgModule({
   declarations: [
@@ -28,6 +33,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     ChapterComponent,
     ChapterTextContentComponent,
     LandingPageComponent,
+    SuggestedLinkComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +43,10 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     MatExpansionModule,
     MatIconModule,
     MatButtonModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
