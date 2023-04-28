@@ -6,6 +6,7 @@ import { ChaptersComponent } from './chapters/chapters.component';
 import { ChapterComponent } from './chapter/chapter.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SuggestedLinkComponent } from './suggested-link/suggested-link.component';
+import { VideoPlayerComponent } from './video-player/video-player.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'welcome',pathMatch:"full"},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path:"question", component:QuestionComponent},
   {path:"chapter", component:ChapterComponent},
   {path:"home", component:LandingPageComponent},
-  {path:"sl", component:SuggestedLinkComponent}
+  {path:"sl", component:SuggestedLinkComponent},
+  {path:'video', component:VideoPlayerComponent}
 ];
 
 @NgModule({

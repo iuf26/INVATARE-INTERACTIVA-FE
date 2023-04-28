@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -18,7 +17,9 @@ import { ChapterTextContentComponent } from './chapter-text-content/chapter-text
 import { MatButtonModule } from '@angular/material/button';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SuggestedLinkComponent } from './suggested-link/suggested-link.component';
-// import { VideoPlayerComponent } from './video-player/video-player.component';
+import { CommonModule } from '@angular/common';
+import { SafePipe } from './safe.pipe';
+import { VideoPlayerComponent } from './video-player/video-player.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,9 @@ import { SuggestedLinkComponent } from './suggested-link/suggested-link.componen
     ChapterTextContentComponent,
     LandingPageComponent,
     SuggestedLinkComponent,
+    VideoPlayerComponent,
+    SafePipe,
+    
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,7 @@ import { SuggestedLinkComponent } from './suggested-link/suggested-link.componen
     MatExpansionModule,
     MatIconModule,
     MatButtonModule,
-    
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
