@@ -1,10 +1,11 @@
 <mat-accordion class="example-headers-align" multi>
-    <div *ngFor="let chapter of chapters">
-           <app-chapter
-    [chapterNr]="chapter.id"
-    [chapterDescription]="chapter.description"
-    [setIsQuizzOpen]="setIsQuizzOpen"
-  ></app-chapter>  
-    </div>
- 
+  <div *ngFor="let chapter of chapters">
+    <app-chapter
+      [chapterNr]="chapter.id"
+      [chapterDescription]="chapter.description"
+      [setIsQuizzOpen]="setIsQuizzOpen"
+      [videoLinks]="chapter.videoLinks"
+      [glossary]="chapter.glossary"
+    ></app-chapter>
+  </div>
 </mat-accordion>

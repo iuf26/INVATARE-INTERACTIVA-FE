@@ -2,24 +2,19 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { QuestionComponent } from './question/question.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { ChaptersComponent } from './chapters/chapters.component';
-import { ChapterComponent } from './chapter/chapter.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { SuggestedLinkComponent } from './suggested-link/suggested-link.component';
-import { VideoPlayerComponent } from './video-player/video-player.component';
+import { GlossaryComponent } from './glossary/glossary.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'welcome',pathMatch:"full"},
-  {path:"welcome", component:WelcomeComponent},
-  {path:"question", component:QuestionComponent},
-  {path:"chapter", component:ChapterComponent},
-  {path:"home", component:LandingPageComponent},
-  {path:"sl", component:SuggestedLinkComponent},
-  {path:'video', component:VideoPlayerComponent}
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'welcome', component: WelcomeComponent },
+  { path: 'question', component: QuestionComponent },
+  { path: 'home', component: LandingPageComponent },
+  { path: 'glos', component: GlossaryComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

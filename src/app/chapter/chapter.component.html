@@ -7,10 +7,29 @@
       </mat-panel-description>
     </mat-expansion-panel-header>
 
-    <p>This is the primary content of the panel.</p>
+    <h5>{{ chapterDescription }}</h5>
+    <mat-divider></mat-divider>
+    <br />
     <!-- TO DO: Here it should be a custom text displayed instead of app-chapter-text-content-->
     <app-chapter-text-content></app-chapter-text-content>
 
+    <!-- Videos -->
+    <br />
+    <h5>Recomandări video</h5>
+    <mat-divider></mat-divider>
+    <br />
+    <app-video-player [videoLinks]="videoLinks"></app-video-player>
+
+    <br />
+    <h5>Glosar</h5>
+    <mat-divider></mat-divider>
+    <br />
+
+    <div>
+      <app-glossary [wordAndMeaning]="glossary"></app-glossary>
+    </div>
+
+    <br />
     <div>
       <button
         mat-raised-button
@@ -20,5 +39,13 @@
         Incepe testul
       </button>
     </div>
+
+    <br />
+    <br />
+    <h5>Secțiune de comentarii</h5>
+    <mat-divider></mat-divider>
+    <br />
+    <!-- AICI VINE COMPONENTA DE COMENTARII -->
   </mat-expansion-panel>
 </mat-accordion>
+<!-- <app-glossary [wordAndMeaning]="glossary"></app-glossary> -->

@@ -15,7 +15,7 @@ import {
 })
 
 export class VideoPlayerComponent implements OnInit {
-  videoLinks: string = "https://www.youtube.com/embed/_qHYdkM_Mi0";
+  @Input() videoLinks: Array<string>;//= ["https://www.youtube.com/embed/_qHYdkM_Mi0","https://www.youtube.com/embed/obkrMiyDrbs","https://www.youtube.com/embed/s_paZpQvca0","https://www.youtube.com/embed/bDnA_coA168"];
 
   constructor() {}
 

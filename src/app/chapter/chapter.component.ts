@@ -8,7 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ChapterComponent implements OnInit {
   @Input() chapterNr: number;
   @Input() chapterDescription: string;
-  @Input() setIsQuizzOpen: (value:boolean) => void
+  @Input() setIsQuizzOpen: (value: boolean) => void;
+  @Input() videoLinks: Array<string>;
+  @Input() glossary:Array<{ word: string; meaning: string }>;
 
   constructor() {}
 

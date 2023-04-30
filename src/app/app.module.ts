@@ -20,6 +20,9 @@ import { SuggestedLinkComponent } from './suggested-link/suggested-link.componen
 import { CommonModule } from '@angular/common';
 import { SafePipe } from './safe.pipe';
 import { VideoPlayerComponent } from './video-player/video-player.component';
+import { GlossaryComponent } from './glossary/glossary.component';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,7 @@ import { VideoPlayerComponent } from './video-player/video-player.component';
     SuggestedLinkComponent,
     VideoPlayerComponent,
     SafePipe,
-    
+    GlossaryComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +49,8 @@ import { VideoPlayerComponent } from './video-player/video-player.component';
     MatIconModule,
     MatButtonModule,
     CommonModule,
+    MatDividerModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
