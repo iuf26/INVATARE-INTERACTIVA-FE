@@ -1,5 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
-import { getUserProgress } from 'src/utils/requests';
+import { Subject } from 'rxjs';
+import { getUserProgress, getUserResults } from 'src/utils/requests';
 
 @Component({
   selector: 'app-landing-page',
@@ -12,6 +13,8 @@ export class LandingPageComponent implements OnInit {
   public quizzId:number;
   userProgress:number;//chapter on which the user is currently on
   userEmail:string = localStorage.getItem('email') || "undefinedEmail"
+  userResults$:Array<string>;
+  $results = new Subject<Array<string>>();
 
   constructor() {}
 
@@ -23,7 +26,15 @@ export class LandingPageComponent implements OnInit {
     })
     .catch(error => {console.error(error)})
 
-
+    getUserResults(this.userEmail)
+    .then(resp => resp.data)
+    .then(resp => {
+      this.userResults$ = resp;
+     console.log({hereresp: this.userResults$ })
+     this.$results.next(resp)
+     
+    })
+    .catch(err => console.error(err))
   }
 
   setIsQuizzOpen(value: boolean) {

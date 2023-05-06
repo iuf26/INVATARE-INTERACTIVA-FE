@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Subject, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-chapter',
@@ -14,10 +15,27 @@ export class ChapterComponent implements OnInit {
   @Input() videoLinks: Array<string>;
   @Input() glossary:Array<{ word: string; meaning: string }>;
   @Input() userProgress: number;
-
+  score: string;
+  @Input() userResults$:Array<string>
+  @Input() $results:Subject<Array<string>>;
+  resultsSubs: Subscription;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.resultsSubs = this.$results.subscribe((res:Array<string>) => {
+      console.log('in subs...')
+        this.userResults$ = res;
+    })
+   
+
+  }
+
+  getScore(){
+    if (this.userResults$ && (this.chapterNr - 1 < this.userResults$.length)){
+      return `Score: ${this.userResults$[this.chapterNr - 1]}`;
+    }
+    return "";
+  }
 
   onStartTestButtonClick(chapterNr: number) {
   
@@ -29,4 +47,11 @@ export class ChapterComponent implements OnInit {
   isChapterDisabled(){
     return this.chapterNr > this.userProgress + 1
   }
+
+  ngOnDestroy() {
+    if (this.resultsSubs) {
+      this.resultsSubs.unsubscribe();
+    }
+  }
+
 }

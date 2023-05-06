@@ -3,6 +3,7 @@ import axios from "axios";
 const GET_USER_PROGRESS = 'http://localhost:8080/users/getUserProgress'
 const SET_USER_PROGRESS = "http://localhost:8080/users/updateProgress";
 const UPDATE_USER_RESULTS = "http://localhost:8080/users/updateResults";
+const GET_USER_RESULTS = "http://localhost:8080/users/getUserResults"
 
 export const getUserProgress = (userEmail:string) => {
 return axios.get(`${GET_USER_PROGRESS}/${userEmail}`);
@@ -30,3 +31,7 @@ export const updateUserResults = (email:string,chapter:string,score:string) => {
     return axios.put(UPDATE_USER_RESULTS,body);
     
     }
+
+    export const getUserResults = (userEmail:string) => {
+        return axios.get(`${GET_USER_RESULTS}/${userEmail}`);
+        }
