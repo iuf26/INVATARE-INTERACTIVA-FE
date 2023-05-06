@@ -13,6 +13,7 @@ export class ChapterComponent implements OnInit {
   @Input() setQuizzId: (value:number) => void
   @Input() videoLinks: Array<string>;
   @Input() glossary:Array<{ word: string; meaning: string }>;
+  @Input() userProgress: number;
 
   constructor() {}
 
@@ -23,5 +24,9 @@ export class ChapterComponent implements OnInit {
     this.setQuizzChapter(this.chapterDescription)
     this.setQuizzId(this.chapterNr);
     this.setIsQuizzOpen(true);
+  }
+
+  isChapterDisabled(){
+    return this.chapterNr > this.userProgress + 1
   }
 }

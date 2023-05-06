@@ -1,4 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
+import { getUserProgress } from 'src/utils/requests';
 
 @Component({
   selector: 'app-landing-page',
@@ -9,10 +10,21 @@ export class LandingPageComponent implements OnInit {
   public isQuizzOpen: boolean;
   public quizzChapter:string;
   public quizzId:number;
+  userProgress:number;//chapter on which the user is currently on
+  userEmail:string = "ifilimon26@gmail.com"
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    getUserProgress(this.userEmail)
+    .then(resp => resp.data)
+    .then(resp => {
+      this.userProgress = resp;
+    })
+    .catch(error => {console.error(error)})
+
+
+  }
 
   setIsQuizzOpen(value: boolean) {
     this.isQuizzOpen = value;

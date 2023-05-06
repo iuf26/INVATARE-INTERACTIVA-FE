@@ -29,6 +29,7 @@ import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxContextModule } from 'ngx-context';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatToolbarModule,
     FlexLayoutModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxContextModule
   ],
   providers: [],
   bootstrap: [AppComponent],

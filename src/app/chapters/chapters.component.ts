@@ -11,6 +11,7 @@ export class ChaptersComponent implements OnInit {
   @Input() setIsQuizzOpen: (value:boolean) => void
   @Input() setQuizzChapter :(value:string) => void
   @Input() setQuizzId: (value:number) => void
+  @Input() userProgress: number;
 
   constructor() {
     this.chapters = allChapters;

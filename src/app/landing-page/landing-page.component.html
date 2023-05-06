@@ -1,8 +1,11 @@
+
+
 <app-chapters
   *ngIf="!isQuizzOpen"
   [setIsQuizzOpen]="setIsQuizzOpen.bind(this)"
   [setQuizzChapter]="setQuizzChapter.bind(this)"
   [setQuizzId]="setQuizzId.bind(this)"
+  [userProgress]="userProgress"
 ></app-chapters>
 
 <app-question
