@@ -11,7 +11,7 @@ export class LandingPageComponent implements OnInit {
   public quizzChapter:string;
   public quizzId:number;
   userProgress:number;//chapter on which the user is currently on
-  userEmail:string = "ifilimon26@gmail.com"
+  userEmail:string = localStorage.getItem('email') || "undefinedEmail"
 
   constructor() {}
 

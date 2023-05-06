@@ -1,6 +1,7 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { interval } from 'rxjs';
 import { QuestionService } from '../service/question.service';
+import { updateUserProgress, updateUserResults } from 'src/utils/requests';
 
 @Component({
   selector: 'app-question',
@@ -11,6 +12,7 @@ export class QuestionComponent implements OnInit {
   @Input() chapterTitle: string;
   @Input() chapterNr: number;
   @Input() setIsQuizzOpen: (value:boolean) => void
+  @Input() userEmail: string;
 
   public name: string = "";
   public questionList: any = [];
@@ -48,6 +50,16 @@ export class QuestionComponent implements OnInit {
   answer(currentQno: number, option: any) {
 
     if(this.currentQuestion + 1 === this.questionList.length){
+      let newChapterNr = this.chapterNr;
+      const score = `${this.correctAnswer}/${this.questionList.length}`;
+      updateUserProgress(this.userEmail,newChapterNr.toString())
+      .then(resp => console.log(resp))
+      .catch(err => console.log(err));
+        console.log({score})
+      updateUserResults(this.userEmail,newChapterNr.toString(),score)
+      .then(resp => console.log(resp))
+      .catch(err => console.log(err));
+
       this.isQuizCompleted = true;
       this.stopCounter();
     }
