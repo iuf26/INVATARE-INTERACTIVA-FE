@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { QuestionComponent } from './question/question.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { ChaptersComponent } from './chapters/chapters.component';
 
+import { AuthComponent } from './login/auth.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 const routes: Routes = [
-  {path:'', redirectTo:'welcome',pathMatch:"full"},
-  {path:"welcome", component:WelcomeComponent},
-  {path:"question", component:QuestionComponent},
-  {path:"chapters", component:ChaptersComponent}
+  { path: '', redirectTo: 'auth', pathMatch: 'full' },
+  { path: 'home', component: LandingPageComponent },
+  {path: "auth", component: AuthComponent},
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

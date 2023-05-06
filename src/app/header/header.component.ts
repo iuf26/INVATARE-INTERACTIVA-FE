@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  user:string = localStorage.getItem('email') || "";
+
   constructor() { }
 
   ngOnInit(): void {
