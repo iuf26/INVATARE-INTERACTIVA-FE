@@ -7,6 +7,8 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
   public isQuizzOpen: boolean;
+  public quizzChapter:string;
+  public quizzId:number;
 
   constructor() {}
 
@@ -14,8 +16,16 @@ export class LandingPageComponent implements OnInit {
 
   setIsQuizzOpen(value: boolean) {
     this.isQuizzOpen = value;
-    console.log("heei");
-    console.log({value});
-    console.log({newv:this.isQuizzOpen});
   }
+
+  setQuizzChapter(value:string){
+    console.log({quizChap:value});
+    this.quizzChapter = value;
+  }
+
+  setQuizzId(value:number){
+    this.quizzId = value;
+  }
+
+
 }

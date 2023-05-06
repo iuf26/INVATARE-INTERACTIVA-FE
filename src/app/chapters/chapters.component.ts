@@ -9,6 +9,8 @@ import { ChapterArray, allChapters } from '../chapterArray';
 export class ChaptersComponent implements OnInit {
   chapters: ChapterArray;
   @Input() setIsQuizzOpen: (value:boolean) => void
+  @Input() setQuizzChapter :(value:string) => void
+  @Input() setQuizzId: (value:number) => void
 
   constructor() {
     this.chapters = allChapters;

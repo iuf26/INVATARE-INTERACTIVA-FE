@@ -8,7 +8,7 @@ import { QuestionService } from '../service/question.service';
   styleUrls: ['./question.component.scss']
 })
 export class QuestionComponent implements OnInit {
-  @Input() chapterTitle: number;
+  @Input() chapterTitle: string;
   @Input() chapterNr: number;
   @Input() setIsQuizzOpen: (value:boolean) => void
 
@@ -25,6 +25,7 @@ export class QuestionComponent implements OnInit {
   constructor(private questionService: QuestionService) { }
 
   ngOnInit(): void {
+    console.log({titleChap: this.chapterNr})
     this.name = localStorage.getItem("name")!;
     this.getAllQuestions();
     this.startCounter();
@@ -32,10 +33,13 @@ export class QuestionComponent implements OnInit {
   getAllQuestions() {
     this.questionService.getQuestionJson()
       .subscribe(res => {
-        this.questionList = res.questions[0];
+        this.questionList = this.chapterNr ? res.questions[this.chapterNr-1] : [];
       })
   }
   nextQuestion() {
+    if( this.currentQuestion >= this.questionList.length - 1) {
+      // aici se ajunge la ultima intrebare
+      return;}
     this.currentQuestion++;
   }
   previousQuestion() {
@@ -43,53 +47,38 @@ export class QuestionComponent implements OnInit {
   }
   answer(currentQno: number, option: any) {
 
-    if(currentQno === this.questionList.length){
+    if(this.currentQuestion + 1 === this.questionList.length){
       this.isQuizCompleted = true;
       this.stopCounter();
     }
     if (option.correct) {
       this.points += 10;
       this.correctAnswer++;
-      setTimeout(() => {
-        this.currentQuestion++;
-        this.resetCounter();
-        this.getProgressPercent();
-      }, 1000);
-
-
-    } else {
-      setTimeout(() => {
-        this.currentQuestion++;
-        this.inCorrectAnswer++;
-        this.resetCounter();
-        this.getProgressPercent();
-      }, 1000);
-
-      this.points -= 10;
+     
+    }else{
+      this.inCorrectAnswer++;
     }
   }
   startCounter() {
-    this.interval$ = interval(1000)
-      .subscribe(val => {
-        this.counter--;
-        if (this.counter === 0) {
-          this.currentQuestion++;
-          this.counter = 60;
-          this.points -= 10;
-        }
-      });
-    setTimeout(() => {
-      this.interval$.unsubscribe();
-    }, 600000);
+    // this.interval$ = interval(1000)
+    //   .subscribe(val => {
+    //     this.counter--;
+    //     if (this.counter === 0) {
+    //       this.currentQuestion++;
+    //       this.counter = 60;
+    //       this.points -= 10;
+    //     }
+    //   });
+    // setTimeout(() => {
+    //   this.interval$.unsubscribe();
+    // }, 600000);
   }
   stopCounter() {
-    this.interval$.unsubscribe();
-    this.counter = 0;
+    // this.interval$.unsubscribe();
+    // this.counter = 0;
   }
   resetCounter() {
-    this.stopCounter();
-    this.counter = 60;
-    this.startCounter();
+   
   }
   resetQuiz() {
     this.resetCounter();

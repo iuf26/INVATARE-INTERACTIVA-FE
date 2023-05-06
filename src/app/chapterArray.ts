@@ -18,6 +18,7 @@ export const allChapters: ChapterArray = [
       { word: 'b', meaning: 'rgdrgdrgdgdrgdrgrgdrg' },
       { word: 'c', meaning: 'some oder meaning very long' },
     ],
+    
   },
   {
     id: 2,

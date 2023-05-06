@@ -9,6 +9,8 @@ export class ChapterComponent implements OnInit {
   @Input() chapterNr: number;
   @Input() chapterDescription: string;
   @Input() setIsQuizzOpen: (value: boolean) => void;
+  @Input() setQuizzChapter :(value:string) => void
+  @Input() setQuizzId: (value:number) => void
   @Input() videoLinks: Array<string>;
   @Input() glossary:Array<{ word: string; meaning: string }>;
 
@@ -17,7 +19,9 @@ export class ChapterComponent implements OnInit {
   ngOnInit(): void {}
 
   onStartTestButtonClick(chapterNr: number) {
-    console.log({ chapterNr });
+  
+    this.setQuizzChapter(this.chapterDescription)
+    this.setQuizzId(this.chapterNr);
     this.setIsQuizzOpen(true);
   }
 }
