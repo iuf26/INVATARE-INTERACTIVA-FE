@@ -32,7 +32,7 @@ export class ChapterComponent implements OnInit {
 
   getScore(){
     if (this.userResults$ && (this.chapterNr - 1 < this.userResults$.length)){
-      return `Score: ${this.userResults$[this.chapterNr - 1]}`;
+      return `Scor: ${this.userResults$[this.chapterNr - 1]}`;
     }
     return "";
   }
