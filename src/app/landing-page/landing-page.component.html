@@ -6,7 +6,10 @@
   [setQuizzChapter]="setQuizzChapter.bind(this)"
   [setQuizzId]="setQuizzId.bind(this)"
   [userProgress]="userProgress"
-></app-chapters>
+  [userResults$]="userResults$"
+  [$results] = "$results"
+  
+  ></app-chapters>
 
 <app-question
   *ngIf="isQuizzOpen"
