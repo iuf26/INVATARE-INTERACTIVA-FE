@@ -8,11 +8,9 @@
 
         <ng-container *ngIf="!isQuizCompleted">
             <div class="d-flex justify-content-around py-3">
-                <div class="score">
-                    <h5>{{points}} Points</h5>
-                </div>
+                
                 <div class="question-remain">
-                    <span style="font-style: italic;">Question {{currentQuestion+1}} of {{questionList.length}}</span>
+                    <span style="font-style: italic;">Intrebarea {{currentQuestion+1}} din {{questionList.length}}</span>
                 </div>
             </div>
             <div class="progress mb-3">
@@ -44,11 +42,12 @@
             <div class="row d-flex justify-content-between">
                 <img style="width: 50%;" class="img-fluid col-sm-12 mx-auto" src="https://icon-library.com/images/celebration-icon-png/celebration-icon-png-7.jpg" alt="">
                 <div class="result text-center col-md-6 col-sm-12">
-                    <h3>Congratulations!! <br>You have completed the quiz. <br>Below is your result:</h3>
-                    <p>Total Question Attempted : {{questionList.length}} </p>
-                    <p>Total Correct Answered : {{correctAnswer}} </p>
-                    <p>Total Wrong Answered : {{inCorrectAnswer}} </p>
-                    <p>Your Score : {{correctAnswer}} /  {{questionList.length}}</p>
+                    <h3>Felicitari!! <br>Ai ajuns la finalul acestui test. <br>Mai jos ai rezultatele:</h3>
+                    <p>Total intrebari : {{questionList.length}} </p>
+                    <p>Total raspunsuri corecte : {{correctAnswer}} </p>
+                    <p>Total raspunsuri gresite : {{inCorrectAnswer}} </p>
+                    <p>Scorul tau : {{correctAnswer}} /  {{questionList.length}}</p>
+                    <button mat-button color="primary" (click)="redirectHome()">Inapoi la capitole de invatare</button>
                 </div>
             </div>
         </ng-container>
