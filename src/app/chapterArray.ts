@@ -11,7 +11,7 @@ export const allChapters: ChapterArray = [
     id: 1,
     description: 'Inovația la nivel individual: Conceptualizare',
     videoLinks: [
-      'https://www.youtube.com/embed/ujOpOzZcjJo',
+      'https://www.youtube.com/embed/DrhDEGNN9BA',
       'https://www.youtube.com/embed/pKwQlm-wldA',
     ],
     glossary: [

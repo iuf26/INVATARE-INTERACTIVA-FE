@@ -2,6 +2,7 @@ import { Component, OnInit,Input } from '@angular/core';
 import { interval } from 'rxjs';
 import { QuestionService } from '../service/question.service';
 import { updateUserProgress, updateUserResults } from 'src/utils/requests';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-question',
@@ -24,7 +25,7 @@ export class QuestionComponent implements OnInit {
   interval$: any;
   progress: string = "0";
   isQuizCompleted : boolean = false;
-  constructor(private questionService: QuestionService) { }
+  constructor(private questionService: QuestionService,private router:Router) { }
 
   ngOnInit(): void {
     console.log({titleChap: this.chapterNr})
@@ -46,6 +47,9 @@ export class QuestionComponent implements OnInit {
   }
   previousQuestion() {
     this.currentQuestion--;
+  }
+  redirectHome(){
+    location.reload();
   }
   answer(currentQno: number, option: any) {
 
