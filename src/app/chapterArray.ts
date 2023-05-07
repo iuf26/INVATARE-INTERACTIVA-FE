@@ -15,9 +15,7 @@ export const allChapters: ChapterArray = [
       'https://www.youtube.com/embed/pKwQlm-wldA',
     ],
     glossary: [
-      { word: 'a', meaning: 'very long s' },
-      { word: 'b', meaning: 'rgdrgdrgdgdrgdrgrgdrg' },
-      { word: 'c', meaning: 'some oder meaning very long' },
+     
     ],
     content:`
     <div>Până acum, inovația a fost investigată sub două accepții distincte: <mark><i>inovația drept produse
@@ -59,9 +57,13 @@ export const allChapters: ChapterArray = [
       'https://www.youtube.com/embed/bDnA_coA168',
     ],
     glossary: [
-      { word: 'a', meaning: 'very long s' },
-      { word: 'b', meaning: 'rgdrgdrgdgdrgdrgrgdrg' },
-      { word: 'c', meaning: 'some oder meaning very long' },
+      { word: 'Motivația prosocială', meaning: `înclinația indivizilor de a se angaja în comportamente
+      valorizate pozitiv de către societate, în spatele cărora se regăsește empatia și grija față de
+      semeni.`},
+      { word: 'Cogniția', meaning: `felul în care informațiile sau cunoștințele sunt reprezentate în sistemul
+      cognitiv uman și modul în care aceste reprezentări sunt procesate.` },
+      { word: 'Ambivalența emoțională', meaning: `experimentarea în mod simultan a emoțiilor pozitive și
+      negative în legătură cu un anumit aspect.` },
     ],
     content:`<div>Există anumiți factori care țin de individ și care își pun amprenta asupra predispoziției acestuia
     de a aborda în manieră inovativă anumite situații cu care se confruntă în interacțiunea sa cu
@@ -207,9 +209,15 @@ export const allChapters: ChapterArray = [
       'https://www.youtube.com/embed/pKwQlm-wldA',
     ],
     glossary: [
-      { word: 'a', meaning: 'very long s' },
-      { word: 'b', meaning: 'rgdrgdrgdgdrgdrgrgdrg' },
-      { word: 'c', meaning: 'some oder meaning very long' },
+      { word: 'Euristică', meaning:  `strategie care ignoră parte din informație, cu scopul de a lua decizii mai repede,
+      mai simplu și/sau mai precis decât folosind metode mai complexe` },
+      { word: 'Procesarea prin intermediul euristicilor', meaning: `atunci când indivizii caută să producă un
+      răspuns cu minim de efort, folosind orice scurtături constructive sau simplificări pe care le au
+      la dispoziție.` },
+      { word: 'Răspuns auto-reglator', meaning: `răspuns controlat intrinsec de către individul implicat, nu de către
+      forțe externe` }, 
+      { word: 'Schimb afectiv', meaning: `procesul de reglare în jos a afectului negativ și de reglare în sus a afectului
+      pozitiv în urma unei experiențe negative` },
     ],
     content:`<div>Creativitatea poate fi conceptualizată drept răspunsul adaptativ al unei persoane la mediul
     înconjurător, prin intermediul căruia acea persoană poate atinge rezultatele dorite sau poate
@@ -255,9 +263,9 @@ export const allChapters: ChapterArray = [
       'https://www.youtube.com/embed/bDnA_coA168',
     ],
     glossary: [
-      { word: 'd', meaning: 'very long s' },
-      { word: 'b', meaning: 'rgdrgdrgdgdrgdrgrgdrg' },
-      { word: 'c', meaning: 'some oder meaning very long' },
+      { word: 'Incubarea', meaning: `procesarea inconștientă a problemelor, cât sunt
+      puse deoparte pentru o perioadă de timp, care poate duce ulterior la noi idei.` },
+      
     ],
     content:`<div>Din perspectiva auto-reglării, individul reprezintă un agent important în procesul creativ. Acest
     rol de agent curprinde atât procese voluntare, precum urmărirea scopului de a fi creativ, cât și
@@ -293,9 +301,6 @@ export const allChapters: ChapterArray = [
       'https://www.youtube.com/embed/pKwQlm-wldA',
     ],
     glossary: [
-      { word: 'a', meaning: 'very long s' },
-      { word: 'b', meaning: 'rgdrgdrgdgdrgdrgrgdrg' },
-      { word: 'c', meaning: 'some oder meaning very long' },
     ],
     content:`<div>După cum s-a punctat în repetate rânduri în conținutul informațional precedent, creativitatea
     nu se manifestă independent de context. În cele ce urmează, va fi detaliat modul în care
@@ -392,9 +397,7 @@ export const allChapters: ChapterArray = [
       'https://www.youtube.com/embed/bDnA_coA168',
     ],
     glossary: [
-      { word: 'a', meaning: 'very long s' },
-      { word: 'b', meaning: 'rgdrgdrgdgdrgdrgrgdrg' },
-      { word: 'c', meaning: 'some oder meaning very long' },
+
     ],
     content:`<div>O resursă personală pentru inovație incontestabilă este reprezentată de cunoștințele din
     domeniul în care urmează să fie implementat elementul de noutate. Pe lângă faptul că se poate
@@ -426,9 +429,11 @@ export const allChapters: ChapterArray = [
       'https://www.youtube.com/embed/bDnA_coA168',
     ],
     glossary: [
-      { word: 'a', meaning: 'very long s' },
-      { word: 'b', meaning: 'rgdrgdrgdgdrgdrgrgdrg' },
-      { word: 'c', meaning: 'some oder meaning very long' },
+      { word: 'Inovația incrementală', meaning: `implică dezvoltarea, șlefuirea sau extinderea unor forme sau
+      tehnologii deja existente` },
+      { word: 'Inovația disruptivă/radicală', meaning: `un salt decisiv, probabil subit și nonlinear de la ceva
+      ce deja există.` },
+
     ],
     content:`<div>În abordarea noutății, se pot contura două tipare comportamentale mai degrabă opuse :
     <ul>

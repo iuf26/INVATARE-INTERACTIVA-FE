@@ -1,358 +1,628 @@
 {
     "questions": [[{
-            "questionText": "Which of the following does TypeScript use to specify types?",
+            "questionText": "Care dintre următoarele nu poate fi considerată o încadrare conceptuală a creativității?",
             "options": [{
-                    "text": ":",
-                    "correct": true
+                    "text": "Creativitatea în calitate de obicei"
+                   
                 },
                 {
-                    "text": ";"
+                    "text": "Creativitatea în termeni de stil, mod sau distorsiuni în felul în care indivizii interacționează cu mediul extern"
                 },
                 {
-                    "text": "!"
+                    "text": "Creativitatea drept nivel de inteligență",
+                     "correct": true
                 },
                 {
-                    "text": "&"
+                    "text": "Creativitatea drept o formă de punere în practică a inteligenței"
                 }
             ],
-            "explanation": "TS uses a colon (:) to separate the property name from the property type"
+            "explanation": ""
         },
         {
-            "questionText": "Which of the following is NOT a type used in TypeScript?",
+            "questionText": "Cele două accepți distincte sub care a fost investigată creativitatea sunt:",
             "options": [{
-                    "text": "number"
+                    "text": "Inovația drept proces creativ și inovația drept rezultat creativ"
                 },
                 {
-                    "text": "string"
+                    "text": "Inovația drept procese de gândire care conduc la produse comerciale și inovația drept comportamente de implementare ale soluțiilor rezultate"
                 },
                 {
-                    "text": "boolean"
+                    "text": "Inovația drept produse comerciale saliente și inovația drept servicii comerciale saliente"
                 },
                 {
-                    "text": "enum",
+                    "text": "Inovația drept produse comerciale saliente și drept procesele de gândire care au condus la acestea",
                     "correct": true
                 }
             ],
-            "explanation": "enum is not used as a type in TypeScript"
+            "explanation": ""
         },
         {
-            "questionText": "How can we specify properties and methods for an object in TypeScript?",
+            "questionText": "Resursele personale pot fi definite drept:",
             "options": [{
-                    "text": "Use classes."
+                    "text": "Niciun răspuns nu este corect"
                 },
                 {
-                    "text": "Use interfaces.",
+                    "text": "Anumite dispoziții comportamentale în momentul în care indivizii se confruntă cu situații care solicită producerea de soluții inovative",
                     "correct": true
                 },
                 {
-                    "text": "Use enums."
+                    "text": "O rezervă a individului"
                 },
                 {
-                    "text": "Use async/await."
+                    "text": "Anumite dispoziții comportamentale care nu au efect asupra creativității"
                 }
             ],
-            "explanation": "interfaces are typically used to list the properties and methods for an object"
+            "explanation": ""
         },
         {
-            "questionText": "How else can Array<number> be written in TypeScript?",
+            "questionText": "Care dintre următoarele nu reprezintă un tipar atunci când vorbim despre creativitate individuală?",
             "options": [{
-                    "text": "@number"
+                    "text": "Indivizi care produc noutate, dar manifestă dispreț pentru orice fel de produs"
                 },
                 {
-                    "text": "number[]",
+                    "text": "Indivizi care nu produc noutate, dar care urmăresc utilitatea lucrurilor",
                     "correct": true
                 },
                 {
-                    "text": "number!"
+                    "text": "Indivizi care doresc să lanseze produse inovative, noi, dar care ignoră utilitatea acestor  produse"
                 },
                 {
-                    "text": "number?"
+                    "text": "Niciun răspuns nu este corect"
                 }
             ],
-            "explanation": "number[] is another way of writing Array<number> in TypeScript"
+            "explanation": ""
         },
         {
-            "questionText": "In which of these does a class take parameters?",
+            "questionText": "Una dintre modalitățile prin care indivizii care generează noutate cu explicit de a concepe un produs util se diferențiază de celelalte două tipare ale creativității individuale este :",
             "options": [{
-                    "text": "constructor",
+                    "text": "Insistă asupra unui produs util din punct de vedere comercial",
                     "correct": true
                 },
                 {
-                    "text": "destructor"
+                    "text": "Se concentrează pe nevoile stakeholderilor"
                 },
                 {
-                    "text": "import"
+                    "text": "Nu se diferențiază"
                 },
                 {
-                    "text": "subscribe"
+                    "text": "Niciun răspuns nu este corect"
                 }
             ],
-            "explanation": "a constructor is used by a class to take in parameters"
-        },
-        {
-            "questionText": "Which is NOT an access modifier?",
-            "options": [{
-                    "text": "private"
-                },
-                {
-                    "text": "protected"
-                },
-                {
-                    "text": "public"
-                },
-                {
-                    "text": "async",
-                    "correct": true
-                }
-            ],
-            "explanation": "async is not used as an access modifier type in TypeScript"
-        },
-        {
-            "questionText": "Which keyword allows us to share information between files in TypeScript?",
-            "options": [{
-                    "text": "import"
-                },
-                {
-                    "text": "export",
-                    "correct": true
-                },
-                {
-                    "text": "async"
-                },
-                {
-                    "text": "constructor"
-                }
-            ],
-            "explanation": "the export keyword allows for the information to be transmitted between files"
-        },
-        {
-            "questionText": "Which is an array method to generate a new array based on a condition?",
-            "options": [{
-                    "text": "filter",
-                    "correct": true
-                },
-                {
-                    "text": "map"
-                },
-                {
-                    "text": "async"
-                },
-                {
-                    "text": "enum"
-                }
-            ],
-            "explanation": "filter is a method used to conditionally create a new array"
-        },
-        {
-            "questionText": "How is a property accessible within a class?",
-            "options": [{
-                    "text": "Using this.propertyName",
-                    "correct": true
-                },
-                {
-                    "text": "Accessors"
-                },
-                {
-                    "text": "Destructuring"
-                },
-                {
-                    "text": "Arrow function"
-                }
-            ],
-            "explanation": "this.propertyName is the way to access a specific property within a class"
+            "explanation": ""
         }
     ],
     [
     {
-        "questionText": "How old are you?",
+        "questionText": "Care dintre următorii nu a fost listat drept un factor individual care influențează creativitatea?",
         "options": [{
-                "text": "42",
+                "text": "Nivelul de inteligență",
                 "correct": true
             },
             {
-                "text": "32"
+                "text": "Motivația personală"
             },
             {
-                "text": "1"
+                "text": "Stilurile cognitive"
             },
             {
-                "text": "44"
+                "text": "Trăsăturile de personalitate"
             }
         ],
-        "explanation": "old"
+        "explanation": ""
     },
     {
-        "questionText": "How many years do you have",
+        "questionText": "Care dintre următoarele trăsături ale modelului Big 5 nu păreau a interfera, în niciun fel, cu nivelul de creativitate?",
         "options": [{
-                "text": "te"
+                "text": "Nevroticismul și deschiderea față de experiențe"
             },
             {
-                "text": "r"
+                "text": "Extraversiunea și nevroticismul"
             },
             {
-                "text": "r"
+                "text": "Extraversiunea și deschiderea față de experiențe"
             },
             {
-                "text": "h",
+                "text": "Conștiinciozitatea și agreabilitatea",
                 "correct": true
             }
         ],
-        "explanation": "stu"
+        "explanation": ""
+    }, {
+        "questionText": "Orientarea către scop face distincția între:",
+        "options": [{
+                "text": "Niciun răspuns nu este corect",
+                "correct": true
+            },
+            {
+                "text": "Orientarea către performanță și orientarea către feedback"
+            },
+            {
+                "text": "Orientarea către performanță și orientarea către competențe"
+            },
+            {
+                "text": "Orientarea către învățare și orientarea către competențe"
+            }
+        ],
+        "explanation": ""
+    },
+    {
+        "questionText": "Conform unor cercetători, relația dintre efort și creativitate este una:",
+        "options": [{
+                "text": "negativă",
+                "correct": true
+            },
+            {
+                "text": "unidirecțională"
+            },
+            {
+                "text": "pozitivă"
+            },
+            {
+                "text": "inexistentă"
+            }
+        ],
+        "explanation": ""
+    },
+    {
+        "questionText": "Care dintre următoarele reprezintă stiluri personale cu rol de a crește creativitatea?",
+        "options": [{
+                "text": "Toate răspunsurile sunt corecte",
+                "correct": true
+            },
+            {
+                "text": "Rezistența față de conformitate"
+            },
+            {
+                "text": "Menținerea autonomiei"
+            },
+            {
+                "text": "Flexibilitatea"
+            }
+        ],
+        "explanation": ""
     }
 ],
 [
     {
-        "questionText": "How old are you?",
+        "questionText": "Procesarea prin intermediul euristicilor este favorizată de:",
         "options": [{
-                "text": "42",
+                "text": "o stare de afect pozitiv",
                 "correct": true
             },
             {
-                "text": "32"
+                "text": "o stare de afect negativ"
             },
             {
-                "text": "1"
+                "text": "ambivalența emoțională"
             },
             {
-                "text": "44"
+                "text": "Niciun răspuns nu este corect"
             }
         ],
-        "explanation": "old"
+        "explanation": ""
     },
     {
-        "questionText": "How many years do you have",
-        "options": [{
-                "text": "te"
+        "questionText": "O stare de afect pozitiv facilitează gândirea disociativă.",
+        "options": [
+            {
+                "text": "Adevărat"
             },
             {
-                "text": "r"
-            },
-            {
-                "text": "r"
-            },
-            {
-                "text": "h",
+                "text": "Fals",
                 "correct": true
             }
         ],
-        "explanation": "stu"
+        "explanation": ""
+    },
+    {
+        "questionText": "Un mecanism prin care afectul negativ poate promova creativitatea este:",
+        "options": [
+            {
+                "text": "Creșterea nivelului de furie"
+            },
+            {
+                "text": "Determinarea unui nivel mai ridicat de persistență în sarcină",
+                "correct": true
+            },
+            {
+                "text": "Creșterea vigilenței"
+            },
+            {
+                "text": "Determinarea unui grad mai ridicat de autoeficacitate"
+            }
+        ],
+        "explanation": ""
+    },
+    {
+        "questionText": "Schimbarea stării afective se referă la:",
+        "options": [
+            {
+                "text": "Procesul de reglare în jos a afectului negativ și de reglare în sus a afectului pozitiv în urma unei experiențe pozitive"
+            },
+            {
+                "text": "Procesul de reglare în jos a afectului negativ și de reglare în sus a afectului pozitiv în urma unei experiențe negative",
+                "correct": true
+            },
+            {
+                "text": "Procesul de abandonare a stării afective curente"
+            },
+            {
+                "text": "Niciun răspuns nu este corect"
+            }
+        ],
+        "explanation": ""
+    },
+    {
+        "questionText": "O măsură prin care se poate stimula afectul pozitiv este:",
+        "options": [
+            {
+                "text": "Luarea unei zile libere"
+            },
+            {
+                "text": "Un discurs motivațional susținut de lider",
+                "correct": true
+            },
+            {
+                "text": "Leadership tranzacțional"
+            },
+            {
+                "text": "Oferirea de recompense în natură"
+            }
+        ],
+        "explanation": ""
     }
 ],
 [
     {
-        "questionText": "How old are you?",
+        "questionText": "În psihologie, incubarea se referă la:",
         "options": [{
-                "text": "42",
+                "text": "Procesarea inconștientă a problemelor",
                 "correct": true
             },
             {
-                "text": "32"
+                "text": "Infiltrarea unui agent patogen în organism"
             },
             {
-                "text": "1"
+                "text": "Clocirea ouălelor prin căldură artificială"
             },
             {
-                "text": "44"
+                "text": "Niciun răspuns nu este corect"
             }
         ],
-        "explanation": "old"
+        "explanation": ""
     },
     {
-        "questionText": "How many years do you have",
-        "options": [{
-                "text": "te"
+        "questionText": "Din perspectiva auto-reglării, individul reprezintă un agent important în procesul creativ.",
+        "options": [
+            {
+                "text": "Fals"
             },
             {
-                "text": "r"
-            },
-            {
-                "text": "r"
-            },
-            {
-                "text": "h",
+                "text": "Adevărat",
                 "correct": true
             }
         ],
-        "explanation": "stu"
+        "explanation": ""
+    },
+    {
+        "questionText": "Autoeficacitatea creativă este:",
+        "options": [
+            {
+                "text": "Un predictor insignifiant al creativității"
+            },
+            {
+                "text": "Auto-percepția oamenilor cu privire la nivelul de creativitate pe care îl pot atinge",
+                "correct": true
+            },{
+                "text": "Preluarea controlului și a face lucrurile să se întâmple"
+            },{
+                "text": "Credința indivizilor în capacitatea lor de a executa comportamente necesare atingerii unor performanțe specifice"
+            }
+        ],
+        "explanation": ""
+    },
+    {
+        "questionText": "Motivațiile prosociale sunt asociate pozitiv cu creativitatea.",
+        "options": [
+            {
+                "text": "Fals"
+            },
+            {
+                "text": "Adevărat",
+                "correct": true
+            }
+        ],
+        "explanation": ""
+    },
+    {
+        "questionText": "Comportamentul proactiv este:",
+        "options": [
+            {
+                "text": "Similar cu comportamentul antisocial"
+            },
+            {
+                "text": "Preluarea controlului și determinarea lucrurilor să se întâmple",
+                "correct": true
+            },
+            {
+                "text": "Similar cu comportamentul reactiv"
+            },{
+                "text": "Niciun răspuns nu este corect"
+            }
+        ],
+        "explanation": ""
     }
 ],
 [
     {
-        "questionText": "How old are you?",
+        "questionText": "Un job este complex atunci când:",
         "options": [{
-                "text": "42",
+                "text": "Toate răspunsurile sunt corecte",
                 "correct": true
             },
             {
-                "text": "32"
+                "text": "Asigură autonomie și feedback"
             },
             {
-                "text": "1"
+                "text": "Are implicații semnificative pentru alții"
             },
             {
-                "text": "44"
+                "text": "Este identificabil"
             }
         ],
-        "explanation": "old"
+        "explanation": ""
     },
     {
-        "questionText": "How many years do you have",
+        "questionText": "Care dintre aspectele de mai jos pot fi asociate pozitiv cu creativitatea?",
         "options": [{
-                "text": "te"
+                "text": "Presiunea din partea liderului și conflictele de sarcină"
             },
             {
-                "text": "r"
+                "text": "Volumul de muncă ridicat și nivelul scăzut de stres"
             },
             {
-                "text": "r"
+                "text": "Nivelul scăzut de stres și numărul scăzut de ore lucrate"
             },
             {
-                "text": "h",
+                "text": "Autonomia și complexitatea jobului",
                 "correct": true
             }
         ],
-        "explanation": "stu"
+        "explanation": ""
+    },
+    {
+        "questionText": "Recompensele cresc creativitatea atunci când:",
+        "options": [{
+                "text": "Acestea sunt substanțiale"
+            },
+            {
+                "text": "Acestea se aliniază cu nevoile individului"
+            },
+            {
+                "text": "Niciun răspuns nu este corect"
+            },
+            {
+                "text": "Angajații dețin un stil de gândire adaptiv",
+                "correct": true
+            }
+        ],
+        "explanation": ""
+    },
+    {
+        "questionText": "Care dintre următoarele nu reprezintă o dimensiune a contextului social care își pune amprenta asupra creativității?",
+        "options": [{
+                "text": "Leadershipul și supervizarea"
+            },
+            {
+                "text": "Rețelele sociale"
+            },
+            {
+                "text": "Feedbackul"
+            },
+            {
+                "text": "Absența conflictelor de sarcină",
+                "correct": true
+            }
+        ],
+        "explanation": ""
+    },
+    {
+        "questionText": "Un factor care facilitează implementarea ideilor inovative este:",
+        "options": [{
+                "text": "Toate răspunsurile sunt corecte"
+            },
+            {
+                "text": "Originalitatea ideilor"
+            },
+            {
+                "text": "O rețea diluată de legături sociale"
+            },
+            {
+                "text": "Instrumentalitatea percepută a ideilor",
+                "correct": true
+            }
+        ],
+        "explanation": ""
     }
 ],
 [
     {
-        "questionText": "How old are you?",
+        "questionText": "Cunoștințele cuprinse în expertiză:",
         "options": [{
-                "text": "42",
+                "text": "Toate răspunsurile sunt corecte",
                 "correct": true
             },
             {
-                "text": "32"
+                "text": "Reprezintă o sursă de idei în legătură cu un anumit subiect"
             },
             {
-                "text": "1"
+                "text": "Oferă informații cu privire la ce modalități de abordare ale problemei se pot dovedi cele mai avantajoase, pornind de la experiențele anterioare"
             },
             {
-                "text": "44"
+                "text": "Definesc metodele și instrumentele prin care se poate realiza progresul"
             }
         ],
-        "explanation": "old"
+        "explanation": ""
     },
     {
-        "questionText": "How many years do you have",
+        "questionText": "Nu reprezintă o modalitate prin care expertiza conduce la motivație:",
         "options": [{
-                "text": "te"
+                "text": "Faptul că face posibilă depistarea golurilor din cunoștințele existente"
             },
             {
-                "text": "r"
+                "text": "Faptul că suscită interesul de a întregi progresul realizat recent în domeniu"
             },
             {
-                "text": "r"
+                "text": "Facilitarea identificării de contradicții în cunoștințele acceptate la nivel universal"
             },
             {
-                "text": "h",
+                "text": "Niciun răspuns nu este corect",
                 "correct": true
             }
         ],
-        "explanation": "stu"
+        "explanation": ""
+    },
+    {
+        "questionText": "Expertiza poate produce și dezavantaje în raport cu creativitatea.",
+        "options": [
+            {
+                "text": "Fals"
+            },
+            {
+                "text": "Adevărat",
+                "correct": true
+            }
+        ],
+        "explanation": ""
+    },
+    {
+        "questionText": "Rolul expertizei în inovației este în întregime de natură cognitivă.",
+        "options": [{
+            "text": "Fals","correct": true
+        },
+        {
+            "text": "Adevărat"
+            
+        }
+        ],
+        "explanation": ""
+    },
+    {
+        "questionText": "Un dezavantaj al expertizei în raport cu creativitatea este că:",
+        "options": [{
+                "text": "Îngreunează reamintirea informațiilor"
+            },
+            {
+                "text": "Este dependentă de nivelul de inteligență"
+            },
+            {
+                "text": "Nu există dezavantaje."
+            },
+            {
+                "text": "Îngustează gândirea",
+                "correct": true
+            }
+        ],
+        "explanation": ""
     }
-]
 
+]
+,
+[
+    {
+        "questionText": "Două tipuri existente și distincte de inovație sunt:",
+        "options": [{
+                "text": "Inovația incrementală și inovația disruptivă",
+                "correct": true
+            },
+            {
+                "text": "Inovația disruptivă și inovația radicală"
+            },
+            {
+                "text": "Inovația radicală și inovația individuală"
+            },
+            {
+                "text": "Inovația experimentală și inovația disruptivă"
+            }
+        ],
+        "explanation": ""
+    },
+    {
+        "questionText": "Asimilarea este asociată cu:",
+        "options": [{
+                "text": "Inovația disruptivă"
+            },
+            {
+                "text": "Inovația radicală"
+            },
+            {
+                "text": "Inovația experimentală"
+            },
+            {
+                "text": "Inovația incrementală",
+                "correct": true
+            }
+        ],
+        "explanation": ""
+    },
+    {
+        "questionText": "Problemele sunt abordate prin reorganizare și restructurare de cunoștințe în cazul:",
+        "options": [
+            {
+                "text": "Asocierii"
+            },
+            {
+                "text": "Inovării",
+                "correct": true
+            },
+            {
+                "text": "Adaptării"
+            },
+            {
+                "text": "Niciun răspuns nu este corect"
+            }
+           
+        ],
+        "explanation": ""
+    },
+    {
+        "questionText": "Maturitatea cognitivă este însoțită de o tranziție de la:",
+        "options": [{
+            "text": "Asimilare la acomodare"
+        },
+        {
+            "text": "Acomodare la asimilare",
+            "correct": true
+        },
+        {
+            "text": "Acomodare la asociere"
+        },
+        {
+            "text": "Asociere la acomodare"
+        }
+        ],
+        "explanation": ""
+    },
+    {
+        "questionText": "Cele patru tipuri distincte de inovatori, în relație cu vârsta, sunt:",
+        "options": [{
+                "text": "Inovatorii precoce, inovatorii emergenți, inovatorii târzi și inovatorii crepusculari"
+            },
+            {
+                "text": "Niciun răspuns nu este corect"
+            },
+            {
+                "text": "Inovatorii precoce, inovatorii maturi, inovatorii târzi și inovatorii seculari"
+            },
+            {
+                "text": "Inovatorii precoce, inovatorii maturi, inovatorii târzi și inovatorii crepusculari",
+                "correct": true
+            }
+        ],
+        "explanation": ""
+    }
+
+]
 
 
 
