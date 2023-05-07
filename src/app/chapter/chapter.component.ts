@@ -12,6 +12,7 @@ export class ChapterComponent implements OnInit {
   @Input() setIsQuizzOpen: (value: boolean) => void;
   @Input() setQuizzChapter :(value:string) => void
   @Input() setQuizzId: (value:number) => void
+  @Input() content:string;
   @Input() videoLinks: Array<string>;
   @Input() glossary:Array<{ word: string; meaning: string }>;
   @Input() userProgress: number;
