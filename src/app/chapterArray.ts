@@ -11,8 +11,8 @@ export const allChapters: ChapterArray = [
     id: 1,
     description: 'Inovația la nivel individual: Conceptualizare',
     videoLinks: [
-      'https://www.youtube.com/embed/DrhDEGNN9BA',
-      'https://www.youtube.com/embed/pKwQlm-wldA',
+      "https://www.youtube.com/embed/kDBzVF1aeeY" ,
+      "https://www.youtube.com/embed/IiyMkOfycOg",
     ],
     glossary: [
      
@@ -52,9 +52,8 @@ export const allChapters: ChapterArray = [
     id: 2,
     description: 'Dimensiuni ale resurselor personale pentru inovație',
     videoLinks: [
-      'https://www.youtube.com/embed/obkrMiyDrbs',
-      'https://www.youtube.com/embed/s_paZpQvca0',
-      'https://www.youtube.com/embed/bDnA_coA168',
+      "https://www.youtube.com/embed/FG3KJzKWrHY",
+      
     ],
     glossary: [
       { word: 'Motivația prosocială', meaning: `înclinația indivizilor de a se angaja în comportamente
@@ -205,8 +204,7 @@ export const allChapters: ChapterArray = [
     id: 3,
     description: 'Dimensiunea afectivă și inovația',
     videoLinks: [
-      'https://www.youtube.com/embed/ujOpOzZcjJo',
-      'https://www.youtube.com/embed/pKwQlm-wldA',
+      "https://www.youtube.com/embed/UCYugnnheWY"
     ],
     glossary: [
       { word: 'Euristică', meaning:  `strategie care ignoră parte din informație, cu scopul de a lua decizii mai repede,
@@ -258,9 +256,8 @@ export const allChapters: ChapterArray = [
     id: 4,
     description: 'Auto-reglarea și inovația',
     videoLinks: [
-      'https://www.youtube.com/embed/obkrMiyDrbs',
-      'https://www.youtube.com/embed/s_paZpQvca0',
-      'https://www.youtube.com/embed/bDnA_coA168',
+      "https://www.youtube.com/embed/SBWkC6qUfgI",
+      "https://www.youtube.com/embed/INGgzIO7vOY"
     ],
     glossary: [
       { word: 'Incubarea', meaning: `procesarea inconștientă a problemelor, cât sunt
@@ -297,8 +294,8 @@ export const allChapters: ChapterArray = [
     id: 5,
     description: 'Inovația individuală în relație cu diferite contexte',
     videoLinks: [
-      'https://www.youtube.com/embed/ujOpOzZcjJo',
-      'https://www.youtube.com/embed/pKwQlm-wldA',
+      "https://www.youtube.com/embed/IqOtdacrWoM",
+      "https://www.youtube.com/embed/U7nEgYOcb5c"
     ],
     glossary: [
     ],
@@ -392,9 +389,7 @@ export const allChapters: ChapterArray = [
     id: 6,
     description: 'Inovația și expertiza',
     videoLinks: [
-      'https://www.youtube.com/embed/obkrMiyDrbs',
-      'https://www.youtube.com/embed/s_paZpQvca0',
-      'https://www.youtube.com/embed/bDnA_coA168',
+      "https://www.youtube.com/embed/eRsms-MMAkY"
     ],
     glossary: [
 
@@ -424,9 +419,8 @@ export const allChapters: ChapterArray = [
     id: 7,
     description: ' Inovația și vârsta',
     videoLinks: [
-      'https://www.youtube.com/embed/obkrMiyDrbs',
-      'https://www.youtube.com/embed/s_paZpQvca0',
-      'https://www.youtube.com/embed/bDnA_coA168',
+      "https://www.youtube.com/embed/RG8DnLh8TXg",
+      "https://www.youtube.com/embed/svEFM5k9PNA"
     ],
     glossary: [
       { word: 'Inovația incrementală', meaning: `implică dezvoltarea, șlefuirea sau extinderea unor forme sau

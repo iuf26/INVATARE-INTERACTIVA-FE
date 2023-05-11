@@ -57,12 +57,13 @@ export class QuestionComponent implements OnInit {
       let newChapterNr = this.chapterNr;
       const score = `${this.correctAnswer}/${this.questionList.length}`;
       updateUserProgress(this.userEmail,newChapterNr.toString())
+      .then(resp => {console.log(resp);
+       updateUserResults(this.userEmail,newChapterNr.toString(),score)
       .then(resp => console.log(resp))
+      .catch(err => console.log(err)); 
+      })
       .catch(err => console.log(err));
         console.log({score})
-      updateUserResults(this.userEmail,newChapterNr.toString(),score)
-      .then(resp => console.log(resp))
-      .catch(err => console.log(err));
 
       this.isQuizCompleted = true;
       this.stopCounter();
