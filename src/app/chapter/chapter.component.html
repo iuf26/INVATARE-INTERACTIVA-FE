@@ -1,4 +1,4 @@
-<mat-accordion >
+<mat-accordion (click)="getAllCommentsByChapterId()">
   <mat-expansion-panel [disabled]="isChapterDisabled()">
     <mat-expansion-panel-header>
       <mat-panel-title> Capitol {{ chapterNr }} </mat-panel-title>
@@ -46,7 +46,34 @@
     <h5>Secțiune de comentarii</h5>
     <mat-divider></mat-divider>
     <br />
-    <!-- AICI VINE COMPONENTA DE COMENTARII -->
+    <mat-expansion-panel class="comments-section">
+      <mat-expansion-panel-header>
+        <ng-container *ngFor="let comment of comments">
+          <app-chapter-comments
+            [username]="comment.author"
+            [commentText]="comment.text"
+            [commentDate]="comment.date"
+          >
+          </app-chapter-comments>
+        </ng-container>
+        <button mat-fab color="primary" class="add-comment-button" (click)="openAddCommentDialog()">
+          <mat-icon>add</mat-icon>
+        </button>
+
+        <ng-template #addCommentDialog>
+          <h2 mat-dialog-title>Add Comment</h2>
+          <mat-dialog-content>
+            <mat-form-field>
+              <input matInput [(ngModel)]="newCommentText" placeholder="Comment text">
+            </mat-form-field>
+          </mat-dialog-content>
+          <mat-dialog-actions>
+            <button mat-button (click)="closeAddCommentDialog()">Cancel</button>
+            <button mat-button color="primary" (click)="addNewComment()">Save</button>
+          </mat-dialog-actions>
+        </ng-template>
+      </mat-expansion-panel-header>
+    </mat-expansion-panel>
   </mat-expansion-panel>
 </mat-accordion>
 <!-- <app-glossary [wordAndMeaning]="glossary"></app-glossary> -->
