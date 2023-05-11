@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthComponent } from './login/auth.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 const routes: Routes = [
-  { path: '', redirectTo: 'auth', pathMatch: 'full' },
+  { path: '*', redirectTo: 'auth', pathMatch: 'full' },
   { path: 'home', component: LandingPageComponent },
   {path: "auth", component: AuthComponent},
 ];
