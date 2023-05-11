@@ -24,6 +24,7 @@
     "axios": "^1.4.0",
     "mat-video": "^2.8.1",
     "ngx-context": "^2.0.0",
+    "ngx-toastr": "^13.2.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

@@ -24,15 +24,16 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatTableModule} from '@angular/material/table';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import {MatCardModule} from '@angular/material/card';
-import {FlexLayoutModule} from '@angular/flex-layout';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {NgxContextModule} from 'ngx-context';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ChapterCommentsComponent} from './chapter-comments/chapter-comments.component';
 import {MatDialogModule} from "@angular/material/dialog";
 
+import { MatCardModule } from '@angular/material/card';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -77,6 +78,7 @@ import {MatDialogModule} from "@angular/material/dialog";
     FormsModule,
     MatButtonModule,
     MatInputModule,
+    ToastrModule.forRoot()  
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent],
