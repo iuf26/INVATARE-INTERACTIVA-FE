@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { AppRoutingModule } from './app-routing.module';
@@ -17,19 +16,23 @@ import { ChapterTextContentComponent } from './chapter-text-content/chapter-text
 import { MatButtonModule } from '@angular/material/button';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SuggestedLinkComponent } from './suggested-link/suggested-link.component';
-import { CommonModule } from '@angular/common';
-import { SafePipe } from './safe.pipe';
-import { VideoPlayerComponent } from './video-player/video-player.component';
-import { GlossaryComponent } from './glossary/glossary.component';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatTableModule } from '@angular/material/table';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatCardModule } from '@angular/material/card';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgxContextModule } from 'ngx-context';
+import {CommonModule, DatePipe} from '@angular/common';
+import {SafePipe} from './safe.pipe';
+import {VideoPlayerComponent} from './video-player/video-player.component';
+import {GlossaryComponent} from './glossary/glossary.component';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {NgxContextModule} from 'ngx-context';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ChapterCommentsComponent} from './chapter-comments/chapter-comments.component';
+import {MatDialogModule} from "@angular/material/dialog";
+
 
 @NgModule({
   declarations: [
@@ -40,6 +43,7 @@ import { NgxContextModule } from 'ngx-context';
     HeaderComponent,
     ChangeBgDirective,
     ChaptersComponent,
+    ChapterCommentsComponent,
     ChapterComponent,
     ChapterTextContentComponent,
     LandingPageComponent,
@@ -66,9 +70,15 @@ import { NgxContextModule } from 'ngx-context';
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxContextModule
+    NgxContextModule,
+    MatCardModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatButtonModule,
+    MatInputModule,
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent],
 })
 

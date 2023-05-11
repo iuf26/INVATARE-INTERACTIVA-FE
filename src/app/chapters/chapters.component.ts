@@ -16,7 +16,7 @@ export class ChaptersComponent implements OnInit {
   @Input() userResults$:Array<string>
   @Input() $results:Subject<Array<string>>;
   constructor() {
-    
+
     this.chapters = allChapters;
   }
 
