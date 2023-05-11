@@ -26,8 +26,8 @@ export class AuthComponent implements OnInit {
       this.authService.login(this.authFormGroup.value).subscribe({
         next: result => {
           if (result.succes) {
-            localStorage.setItem("user", JSON.stringify(result.getValue()));
-            this.router.navigate(["/welcome"]);
+            localStorage.setItem("email", JSON.stringify(result.getValue()));
+            this.router.navigate(["/home"]);
           }
         }, error: err => {
           console.error(err)
